@@ -1,0 +1,19 @@
+<!-- <div>
+    <ul class="img-grid-list">
+        <li class="img-cell">1</li>
+        <li class="img-cell">1</li>
+        <li class="img-cell">1</li>
+        <li class="img-cell">1</li>
+    </ul>
+</div> -->
+
+<div class="flex-parent-element">
+    <div class="flex-child-element magenta">
+        <ul class="img-grid-list">
+            <li class="img-cell" *ngFor="let g of galleryImages">
+                <img src="{{g.img}}" class="thumb_img"/>
+            </li>
+        </ul>
+    </div>
+    <div class="flex-child-element green">Flex Column 2</div>
+</div>
