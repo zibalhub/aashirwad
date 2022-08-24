@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
       {img: "assets/images/slider6.jpg", slideId: '8'},
       {img: "assets/images/slider7.jpg", slideId: '9'}
     ];
-    this.slideConfig = {"slidesToShow": 1, "dots": true, "infinite": true, "autoplay": true, "autoplaySpeed": 2000};
+    this.slideConfig = {"slidesToShow": 1, "dots": true, "infinite": true};
   }
    
   slickInit() {
