@@ -14,33 +14,70 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.slides = [
-      {img: "assets/images/slider.jpg", slideId: '0'},
-      {img: "assets/images/slider0.jpg", slideId: '1'},
-      {img: "assets/images/slider00.jpg", slideId: '2'},
-      {img: "assets/images/slider1.jpg", slideId: '3'},
-      {img: "assets/images/slider2.jpg", slideId: '4'},
-      {img: "assets/images/slider3.jpg", slideId: '5'},
-      {img: "assets/images/slider4.jpg", slideId: '6'},
-      {img: "assets/images/slider5.jpg", slideId: '7'},
-      {img: "assets/images/slider6.jpg", slideId: '8'},
-      {img: "assets/images/slider7.jpg", slideId: '9'}
+      {img: "assets/images/slider.jpg"},
+      {img: "assets/images/slider00.jpg"},
+      {img: "assets/images/slider1.jpg"},
+      {img: "assets/images/slider2.jpg"},
+      {img: "assets/images/slider3.jpg"},
+      {img: "assets/images/slider4.jpg"},
+      {img: "assets/images/slider5.jpg"},
+      {img: "assets/images/slider6.jpg"},
+      {img: "assets/images/slider7.jpg"}
     ];
-    this.slideConfig = {"slidesToShow": 1, "dots": true, "infinite": true};
-  }
-   
-  slickInit() {
-    console.log('slick initialized');
-  }
-     
-  breakpoint() {
-    console.log('breakpoint');
-  }
-     
-  afterChange() {
-    console.log('afterChange');
-  }
-     
-  beforeChange() {
-    console.log('beforeChange');
+
+    this.slideConfig = {
+      slidesToShow: 1, 
+      dots: true, 
+      infinite: true,
+      mobileFirst: true,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true, 
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            mobileFirst: true,
+            dots: true,
+            fade: true,
+            autoplay: true, 
+            autoplaySpeed: 2000,
+            cssEase: 'linear'
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            mobileFirst: true,
+            fade: true,
+            dots: true,
+            autoplay: true, 
+            autoplaySpeed: 2000,
+            cssEase: 'linear'
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            mobileFirst: true,
+            fade: true,
+            dots: true,
+            autoplay: true, 
+            autoplaySpeed: 2000,
+            cssEase: 'linear'
+          }
+        }
+      ]
+    };
   }
 }

@@ -1,11 +1,36 @@
-<ngx-slick-carousel class="carousel"
+<div class="container-fluid">
+      <div class="slide-show-container">
+            <ngx-slick-carousel class="carousel"
                         #slickModal="slick-carousel"
-                        [config]="slideConfig" 
-                        (init)="slickInit()"
-                        (breakpoint)="breakpoint()"
-                        (afterChange)="afterChange()"
-                        (beforeChange)="beforeChange()">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-              <img src="{{ slide.img }}" alt="" width="100%">
-        </div>
-</ngx-slick-carousel>
+                        [config]="slideConfig">
+                  <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                        <img src="{{ slide.img }}" alt="" width="100%">
+                  </div>
+            </ngx-slick-carousel>
+      </div>
+      <div class="d-grid gap-3">
+            <div class="p-2">
+                  <p>
+                        Aashirwad Farms with it’s spacious Party Lawns and fully air-conditioned Banquet Hall located in the 
+                        heart of Yamuna Nagar, Haryana is the premier event hosting facility. 
+                        The big luscious green lawn and spectacular banquet hall makes a good choice for Weddings, 
+                        Receptions, Musical Nights, Exhibition and Trade shows, Concerts, Conferences etc.  Located minutes 
+                        away the bus stop and the railway station make it a perfect venue to host an ideal function. 
+                        The beautifully landscaped and gated venue is walled from all four sides. The site is a premier 
+                        located for all neighboring cities.
+                  </p>
+            </div>
+            <div class="p-2">
+                  <p>
+                        We provide well maintained extra ordinary lush green lawn and sparkling banquet hall for parties and 
+                        general recreation activities on rental basis. Aashirwad Farm’s eco-friendly well maintained lawn can 
+                        hold a party size up to 2500 guests.  Separate lavatory facilities for men and women are available. 
+                        The farm house has an air-conditioned 2 bed room house with attached bathroom overlooking the infinite 
+                        greens. The rooms are airy and furnished with all major accessories.  Aashirwad Farms has ample parking 
+                        on all three sides of the facility. Water and electricity is also provided throughout the compound.
+                  </p>
+            </div>
+      </div>
+      <div>
+      </div>
+</div>
