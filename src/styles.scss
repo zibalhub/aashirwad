@@ -136,6 +136,20 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+  .slick-slide img{
+    margin: 0 0 0 -20%;
+    height: 472px;
+    width: auto;
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+     -ms-transition: all 0.7s ease-out;
+      -o-transition: all 0.7s ease-out;
+         transition: all 0.7s ease-out;
+}
+img.contactbnr {
+  width: auto;
+  height: 226px;
+}
 }
 
 /*--------------------------------------------------------------
@@ -405,13 +419,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .navbar-mobile {
-  position: fixed;
+  position: fixed !important;
   overflow: hidden;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(5, 74, 133, 0.9);
+  background: rgb(102 138 3 / 57%);
   transition: 0.3s;
   z-index: 999;
 }

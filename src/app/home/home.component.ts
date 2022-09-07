@@ -14,8 +14,15 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.slides = [
-      {img: "assets/images/banner1.jpg"},
-      {img: "assets/images/banner2.jpg"}
+      {img: "assets/images/slider.jpg"},
+      {img: "assets/images/slider00.jpg"},
+      {img: "assets/images/slider1.jpg"},
+      {img: "assets/images/slider2.jpg"},
+      {img: "assets/images/slider3.jpg"},
+      {img: "assets/images/slider4.jpg"},
+      {img: "assets/images/slider5.jpg"},
+      {img: "assets/images/slider6.jpg"},
+      {img: "assets/images/slider7.jpg"}
     ];
 
     this.slideConfig = {

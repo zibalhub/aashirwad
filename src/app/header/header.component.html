@@ -1,20 +1,29 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center ">
-    <div class="container d-flex align-items-center justify-content-between">
+    <div class="container d-flex align-items-center justify-content-between dropdown">
 
       <h1 class="logo"><a [routerLink]="['/home']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         <img src="assets/images/logonew3.png"/>
       </a></h1>
     
-
-      <nav id="navbar" class="navbar">
+      
+      <nav id="navbar" class="navbar webnav">
         <ul>
           <li><a class="nav-link scrollto" [routerLink]="['/home']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
           <li><a class="nav-link scrollto" [routerLink]="['/gallery']" routerLinkActive="active">Gallery</a></li>
             <li><a class="nav-link scrollto" [routerLink]="['/contacts']" routerLinkActive="active">Contacts</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <i class="fa fa-bars mobile-nav-toggle" data-bs-toggle="dropdown"></i>
+      <div class="dropdown-menu"></div>
+      <nav id="navbar" class="navbar navbar-mobile ">
+        <ul class="">
+          <li><a class="nav-link scrollto" [routerLink]="['/home']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+          <li><a class="nav-link scrollto" [routerLink]="['/gallery']" routerLinkActive="active">Gallery</a></li>
+            <li><a class="nav-link scrollto" [routerLink]="['/contacts']" routerLinkActive="active">Contacts</a></li>
+        </ul>
+        
       </nav><!-- .navbar -->
 
     </div>
