@@ -30,3 +30,17 @@
     width: 80px;
     height: 80px;
   }
+  .myglry .filter-app:hover img {
+    position: absolute;
+    width: 600px;
+    max-width: 600px;
+    z-index: 99999;
+    left: -10%;
+    border: 10px solid #fff;
+    box-shadow: 0 0 52px #000;
+}
+
+.myglry .filter-app {
+    position: relative;
+    overflow: visible;
+}
