@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { GalleryComponent } from './gallery.component';
 import { RouterModule, Routes } from '@angular/router';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 const routes: Routes = [
   {
@@ -16,7 +17,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     MatGridListModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    NgxPaginationModule
   ],
   exports: [GalleryComponent]
 })

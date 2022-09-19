@@ -18,11 +18,11 @@
             <h2>Gallery</h2>
             </div>
   
-          
+          <div class="gallerys-bd">
   
-          <div class="row portfolio-container myglry">
+          <div class="glt-cnt">
   
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app"><img src="assets/images/gal000.jpg" class="img-fluid" alt=""></div>
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app"><img src="assets/images/gal000.jpg" class="img-fluid" alt=""></div>
             <div class="col-lg-4 col-md-6 portfolio-item filter-app"><img src="assets/images/gal00.jpg" class="img-fluid" alt=""></div>
             <div class="col-lg-4 col-md-6 portfolio-item filter-app"><img src="assets/images/gal0.jpg" class="img-fluid" alt=""></div>
             <div class="col-lg-4 col-md-6 portfolio-item filter-app"><img src="assets/images/gal1.jpg" class="img-fluid" alt=""></div>
@@ -42,11 +42,23 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-app"><img src="assets/images/gal15.jpg" class="img-fluid" alt=""></div>
             <div class="col-lg-4 col-md-6 portfolio-item filter-app"><img src="assets/images/gal16.jpg" class="img-fluid" alt=""></div>
             <div class="col-lg-4 col-md-6 portfolio-item filter-app"><img src="assets/images/gal17.jpg" class="img-fluid" alt=""></div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app"><img src="assets/images/gal18.jpg" class="img-fluid" alt=""></div>
-  
-  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app"><img src="assets/images/gal18.jpg" class="img-fluid" alt=""></div> -->
+            <div class="glt-cnt-box">
+            <div *ngFor="let img of galleryImages | paginate: { itemsPerPage: 15, currentPage: p }">
+              <img [src]="img.img" width="70px" height="70px" (click)="imgclick(img.img)" [ngClass]="img.class">
+
+            </div>
+            </div>
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
           </div>
-  
+          <div class="bigimg">
+            
+            <img [src]="largeimg">
+            <a [href]="largeimg" [download]="largeimg" class="downloadimg">
+              Download Original
+            </a>
+          </div>
+        </div>
         </div>
       </section>
 <!--div class="flex-parent-element">
