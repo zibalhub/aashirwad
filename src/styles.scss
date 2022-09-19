@@ -137,9 +137,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     transition-delay: 0 !important;
   }
   .slick-slide img{
-    margin: 0 0 0 -20%;
-    height: 472px;
-    width: auto;
+    margin:70px 0 0 0;
+    height: auto;
+    width: 100%;
     -webkit-transition: all 0.7s ease-out;
     -moz-transition: all 0.7s ease-out;
      -ms-transition: all 0.7s ease-out;
@@ -147,8 +147,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
          transition: all 0.7s ease-out;
 }
 img.contactbnr {
-  width: auto;
-  height: 226px;
+  width: 100%;
+  height: auto;
+  margin: 70px 0 0;
 }
 }
 
