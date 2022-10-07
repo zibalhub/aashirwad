@@ -181,7 +181,7 @@ img.contactbnr {
 }
 
 #topbar .contact-info i {
-  color: #f6b024;
+  color: #669900;
   line-height: 0;
   margin-right: 5px;
 }
@@ -196,7 +196,7 @@ img.contactbnr {
 
 #topbar .cta a {
   color: #fff;
-  background: #f6b024;
+  background: #669900;
   padding: 6px 24px 8px 24px;
   display: inline-block;
   transition: 0.3s;
@@ -304,7 +304,7 @@ img.contactbnr {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #f6b024;
+  background-color: #669900;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -406,7 +406,7 @@ img.contactbnr {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #f6b024;
+  color: #669900;
 }
 
 @media (max-width: 991px) {
@@ -471,7 +471,7 @@ img.contactbnr {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #f6b024;
+  color: #669900;
 }
 
 .navbar-mobile .getstarted,
@@ -506,7 +506,7 @@ img.contactbnr {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #f6b024;
+  color: #669900;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -559,7 +559,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #054a85;
+  color: #000;
 }
 
 .section-title p {
@@ -595,7 +595,7 @@ section {
 .icon-boxes .icon i {
   font-size: 36px;
   line-height: 1;
-  color: #f6b024;
+  color: #669900;
 }
 
 .icon-boxes .title {
@@ -619,7 +619,7 @@ section {
 # About Us
 --------------------------------------------------------------*/
 .about {
-  padding: 140px 0;
+  padding: 80px 0 140px;
   background: url("/src/assets/images/btm-design.png");
   position: relative;
 }
@@ -999,7 +999,7 @@ section {
 
 .services .icon-box i {
   float: left;
-  color: #f6b024;
+  color: #669900;
   font-size: 40px;
   line-height: 0;
 }
@@ -1058,12 +1058,12 @@ section {
   transition: 0.5s;
   margin: 10px;
   border-radius: 50px;
-  border: 2px solid #f6b024;
+  border: 2px solid #669900;
   color: #fff;
 }
 
 .cta .cta-btn:hover {
-  background: #f6b024;
+  background: #669900;
 }
 
 @media (max-width: 1024px) {
@@ -1750,12 +1750,12 @@ section {
 }
 
 .blog .entry .entry-title a {
-  color: #054a85;
+  color: #000;
   transition: 0.3s;
 }
 
 .blog .entry .entry-title a:hover {
-  color: #f6b024;
+  color: #669900;
 }
 
 .blog .entry .entry-meta {
@@ -1800,7 +1800,7 @@ section {
 
 .blog .entry .entry-content .read-more a {
   display: inline-block;
-  background: #f6b024;
+  background: #669900;
   color: #fff;
   padding: 6px 20px;
   transition: 0.3s;
@@ -1864,7 +1864,7 @@ section {
 }
 
 .blog .entry .entry-footer a:hover {
-  color: #f6b024;
+  color: #669900;
 }
 
 .blog .entry .entry-footer .cats {
@@ -1973,7 +1973,7 @@ section {
 }
 
 .blog .blog-comments .comment h5 a:hover {
-  color: #f6b024;
+  color: #669900;
 }
 
 .blog .blog-comments .comment h5 .reply {
@@ -2074,7 +2074,7 @@ section {
 
 .blog .blog-pagination li.active,
 .blog .blog-pagination li:hover {
-  background: #f6b024;
+  background: #669900;
 }
 
 .blog .blog-pagination li.active a,
@@ -2125,7 +2125,7 @@ section {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: #f6b024;
+  background: #669900;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -2155,7 +2155,7 @@ section {
 }
 
 .blog .sidebar .categories ul a:hover {
-  color: #f6b024;
+  color: #669900;
 }
 
 .blog .sidebar .categories ul a span {
@@ -2185,7 +2185,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #f6b024;
+  color: #669900;
 }
 
 .blog .sidebar .recent-posts time {
@@ -2221,8 +2221,8 @@ section {
 
 .blog .sidebar .tags ul a:hover {
   color: #fff;
-  border: 1px solid #f6b024;
-  background: #f6b024;
+  border: 1px solid #669900;
+  background: #669900;
 }
 
 .blog .sidebar .tags ul a span {
@@ -2278,7 +2278,7 @@ section {
   font-size: 16px;
   padding: 0 20px;
   margin: 3px;
-  background: #f6b024;
+  background: #669900;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -2329,7 +2329,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #f6b024;
+  background: #669900;
   color: #fff;
   text-decoration: none;
 }
@@ -2402,5 +2402,5 @@ section {
 }
 
 #footer .credits a {
-  color: #f6b024;
+  color: #669900;
 }

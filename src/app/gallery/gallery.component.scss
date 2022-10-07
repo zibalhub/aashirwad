@@ -122,6 +122,24 @@ a.downloadimg {
 .bigimg img {
   width: 100%;
 }
+.vidoeboxs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.vidoelistc {
+  border: 10px solid #fff;
+  box-shadow: 0 0 8px #999;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.vidoelistc video {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+}
 @media(max-width: 768px){
   .gallerys-bd{
     flex-direction: column;
