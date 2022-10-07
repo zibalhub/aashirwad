@@ -48,7 +48,7 @@
   display: grid;
   grid-template-columns: 280px 1fr;
   width: 1124px;
-  margin: 7% auto;
+  margin: 0 auto 80px;
   justify-content: space-between;
   grid-gap: 40px;
 }
@@ -124,7 +124,7 @@ a.downloadimg {
 }
 .vidoeboxs {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
@@ -134,8 +134,12 @@ a.downloadimg {
   border-radius: 5px;
   overflow: hidden;
 }
-
-.vidoelistc video {
+.main-glry {
+  background: #eeeeee;
+  padding: 80px 0;
+  margin: 0 0 -57px 0;
+}
+.vidoelistc img {
   width: 100%;
   height: 100%;
   margin: 0 0 0 0;
@@ -161,5 +165,8 @@ a.downloadimg {
 .gallerys-bd .glt-cnt-box div {
   width: auto;
   
+}
+.vidoeboxs{
+  grid-template-columns: 1fr;
 }
 }

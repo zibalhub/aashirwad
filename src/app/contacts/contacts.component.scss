@@ -38,3 +38,10 @@
     justify-content: center;
     border-radius: 10em;
 }
+@media(max-width:768px){
+    .social-lst {
+        flex-direction: column;
+        justify-content: left !IMPORTANT;
+        align-items: self-start !important;
+    }
+}

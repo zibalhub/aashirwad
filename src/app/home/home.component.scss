@@ -113,3 +113,36 @@ section.sections-more ul.pakeges h4 {
     padding: 10px 15px;
     box-shadow: 0 -22px 21px rgba(0,0,0,0.4);
 }
+@media (max-width:768px){
+    .video-backer ul.pakeges {
+        position: static !important;
+        flex-direction: column;
+        width: 100% !important;
+    }section.sections-more.mulitpks {
+        margin: 0;
+    }
+    
+    .video-backer .img {
+        display: none;
+    }
+    
+    .video-backer ul.pakeges .imgs {
+        width: 233px !important;
+        height: 233px !important;
+    }
+    
+    .video-backer ul.pakeges {
+        padding: 0 0 74px 0 !important;
+        margin: 0 0  0;
+    }
+    .video-backer ul.pakeges li {
+        margin: 0 0 30px 0 !important;
+    }
+    .venue-girds {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .grid-lft-2 {
+        flex-direction: column;
+    }
+}

@@ -61,65 +61,22 @@
           </div>
         </div>
         </div>
+        <div class="main-glry">
         <div class="container aos-init aos-animate" data-aos="fade-up">
   
           <div class="section-title">
             <h2>Video</h2>
             </div>
   <div class="vidoeboxs">
-<div class="vidoelistc">
-  <video width="320" height="240" controls>
-    <source src="../../assets/images/1.MP4" type="video/mp4">
-  </video>
+<div class="vidoelistc" *ngFor="let img of galleryVideo">
+    <img [src]="img.img" (click)="videoplay(img)"/>
 </div>
-<div class="vidoelistc">
-  <video width="320" height="240" controls>
-    <source src="../../assets/images/1.MP4" type="video/mp4">
-  </video>
-</div>
-<div class="vidoelistc">
-  <video width="320" height="240" controls>
-    <source src="../../assets/images/1.MP4" type="video/mp4">
-  </video>
-</div>
-<div class="vidoelistc">
-  <video width="320" height="240" controls>
-    <source src="../../assets/images/1.MP4" type="video/mp4">
-  </video>
-</div>
-<div class="vidoelistc">
-  <video width="320" height="240" controls>
-    <source src="../../assets/images/1.MP4" type="video/mp4">
-  </video>
-</div>
-<div class="vidoelistc">
-  <video width="320" height="240" controls>
-    <source src="../../assets/images/1.MP4" type="video/mp4">
-  </video>
-</div>
-<div class="vidoelistc">
-  <video width="320" height="240" controls>
-    <source src="../../assets/images/1.MP4" type="video/mp4">
-  </video>
-</div>
-<div class="vidoelistc">
-  <video width="320" height="240" controls>
-    <source src="../../assets/images/1.MP4" type="video/mp4">
-  </video>
-</div>
-<div class="vidoelistc">
-  <video width="320" height="240" controls>
-    <source src="../../assets/images/1.MP4" type="video/mp4">
-  </video>
-</div>
-<div class="vidoelistc">
-  <video width="320" height="240" controls>
-    <source src="../../assets/images/1.MP4" type="video/mp4">
-  </video>
-</div>
+
+
   </div>
           
         </div>
+      </div>
       </section>
 <!--div class="flex-parent-element">
     <div class="flex-child-element magenta">

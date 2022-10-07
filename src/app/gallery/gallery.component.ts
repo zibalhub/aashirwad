@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { MyVideoComponent } from './my-video/my-video.component';
 
 @Component({
   selector: 'app-gallery',
@@ -50,10 +52,33 @@ export class GalleryComponent implements OnInit {
     {img: "assets/images/gal39.jpg", class:"notactive"},
     {img: "assets/images/gal40.jpg", class:"notactive"},
   ]
-  constructor() { }
+  galleryVideo = [
+    {img: "assets/images/11.jpg", videourl:"assets/images/1.MP4.mp4"},
+    {img: "assets/images/22.jpg", videourl:"../assets/images/2.MP4.mp4"},
+    {img: "assets/images/33.JPG", videourl:"../assets/images/3.MP4.mp4"},
+    {img: "assets/images/44.jpg", videourl:"assets/images/4.MP4.mp4"},
+    {img: "assets/images/55.jpg", videourl:"../assets/images/5.MP4.mp4"},
+    {img: "assets/images/66.jpg", videourl:"../assets/images/6.MP4.mp4"},
+    {img: "assets/images/77.jpg", videourl:"assets/images/7.MP4.mp4"},
+    {img: "assets/images/88.jpg", videourl:"../assets/images/8.MP4.mp4"},
+    {img: "assets/images/99.jpg", videourl:"../assets/images/9.MP4.mp4"},
+  ]
+  constructor(private dialog:MatDialog) { }
   p:number=1
   ngOnInit(): void {
   
+  }
+  videoplay(url:any){
+    let dialogRef = this.dialog.open(MyVideoComponent, {
+      width: '700px',
+      panelClass: 'delete-dialog',
+      data: {view: url}
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+
+      }
+    });
   }
   largeimg:any='assets/images/gal1.jpg'
   imgclick(url:any){

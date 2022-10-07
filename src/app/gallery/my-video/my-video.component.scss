@@ -1,0 +1,21 @@
+.vdo-box {
+    position: relative;
+}
+
+.vdo-box .btn {
+    position: absolute;
+    right: -61px;
+    top: -64px;
+    background: #fff;
+    border-radius: 10em;
+    font-size: 19px;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+::ng-deep mat-dialog-container {
+    overflow: visible !important;
+}

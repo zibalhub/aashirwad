@@ -4,6 +4,8 @@ import { GalleryComponent } from './gallery.component';
 import { RouterModule, Routes } from '@angular/router';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { MyVideoComponent } from './my-video/my-video.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const routes: Routes = [
   {
@@ -13,12 +15,13 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [GalleryComponent],
+  declarations: [GalleryComponent, MyVideoComponent],
   imports: [
     CommonModule,
     MatGridListModule,
     RouterModule.forChild(routes),
-    NgxPaginationModule
+    NgxPaginationModule,
+    MatDialogModule
   ],
   exports: [GalleryComponent]
 })
