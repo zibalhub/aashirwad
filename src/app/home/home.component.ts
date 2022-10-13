@@ -22,7 +22,14 @@ export class HomeComponent implements OnInit {
       {img: "assets/images/slider4.jpg"},
       {img: "assets/images/slider5.jpg"},
       {img: "assets/images/slider6.jpg"},
-      {img: "assets/images/slider7.jpg"}
+      {img: "assets/images/slider7.jpg"},
+      {img: "assets/images/slider8.jpg"},
+      {img: "assets/images/slider9.jpg"},
+      {img: "assets/images/slider10.jpg"},
+      {img: "assets/images/slider11.jpg"},
+      {img: "assets/images/slider12.jpg"},
+      {img: "assets/images/slider13.jpg"},
+      {img: "assets/images/slider14.jpg"}
     ];
 
     this.slideConfig = {
