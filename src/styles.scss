@@ -2404,3 +2404,10 @@ section {
 #footer .credits a {
   color: #669900;
 }
+.linksrd a {
+  text-decoration: none;
+  color: #000;
+}
+.linksrd a:hover {
+  text-decoration: underline;
+}
